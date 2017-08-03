@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flexbox</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+</head>
+<body class="strana">
+	<div class="sepia">
+
+	<header class="heder">
+		<nav class="meni">
+			
+			<ul class="meni-logo">
+				<li class="item-logo"><a href="" class="">LOGO</a></li>
+			</ul>
+
+			<ul class="meni1">
+				<li class="item"><a href="#">Pocetna</a></li>
+				<li class="item"><a href="#">O nama</a></li>
+				<li class="item"><a href="#">Tutorijali</a></li>
+				<li class="item"><a href="galerija-1.html">Galerija</a></li>
+				<li class="item"><a href="#">Kontakt</a></li>
+			</ul> 
+			
+			<ul class="meni3">	
+				<li><a href="" class="fa fa-facebook"></a></li>
+				<li><a href="" class="fa fa-instagram"></a></li>
+				<li><a href="" class="fa fa-youtube"></a></li>
+			</ul>				
+		
+		</nav>
+			<!--<hgroup> -->
+				<h1>dobrodosli</h1>
+				<h4>Gde zivot pocinje a vreme staje</h4>
+			</hgroup>
+		</header>
+
+	<div class="stranica">
+		
+		
+		
+		
+		<div class="sadrzaj">
+		<div class="magla"></div>
+			<section class="glavno">
+				<article class="glavni-artikal">
+					<header class="glavni-heder">
+						<hgroup>
+							<h3>Naslov</h3>
+							<h2>Podnaslov</h2><hr>
+						</hgroup>
+					</header>
+					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quaerat enim necessitatibus laboriosam qui atque earum expedita autem fugit. Quos eius molestiae sequi ea, culpa alias voluptatem deserunt praesentium labore aperiam dolorum cupiditate repudiandae voluptates. Beatae nulla numquam sed tempore, perspiciatis recusandae, temporibus illum eius, inventore id possimus, repudiandae rerum.</p><hr><br><br><br>
+					<footer>Datum</footer>
+				</article>
+			</section>
+			
+			<article class="zabava">
+				<header class="zabavni-heder">
+						<hgroup>
+							<h1>Naslov</h1>
+							<h2>Podnaslov</h2><hr>
+						</hgroup>
+					</header>
+					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quaerat enim necessitatibus laboriosam qui atque earum expedita autem fugit. Quos eius molestiae sequi ea, culpa alias voluptatem deserunt praesentium labore aperiam dolorum cupiditate repudiandae voluptates. Beatae nulla numquam sed tempore, perspiciatis recusandae, temporibus illum eius, inventore id possimus, repudiandae rerum.</p><hr><br><br><br>
+					<footer> Datum</footer>
+			</article>
+		
+			<aside class="novosti">
+				<header>
+						<hgroup>
+							<h1>Naslov</h1>
+							<h2>Podnaslov</h2><hr>
+						</hgroup>
+					</header>
+					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quaerat enim necessitatibus laboriosam qui atque earum expedita autem fugit. Quos eius molestiae sequi ea, culpa alias voluptatem deserunt praesentium labore aperiam dolorum cupiditate repudiandae voluptates. Beatae nulla numquam sed tempore, perspiciatis recusandae, temporibus illum eius, inventore id possimus, repudiandae rerum.</p><hr><br><br><br>
+					<footer> Datum</footer>
+			</aside>
+		
+		</div>
+
+		
+	
+	</div>
+		<footer class="futer">
+			<div class="bw">
+				<div class="box1">
+				<p>© 2015 Predrag. All rights reserved. </p>
+				</div>
+			</div>
+
+		</footer>
+	</div>
+	
+	<script>
+		$(document).ready(function() {
+  
+  		$(window).scroll(function () {
+	      //if you hard code, then use console
+	      //.log to determine when you want the 
+	      //nav bar to stick.  
+	      console.log($(window).scrollTop())
+    	if ($(window).scrollTop() > 150) {
+      	$('.meni').addClass('navbar-fixed');
+    }
+    	if ($(window).scrollTop() < 150) {
+      	$('.meni').removeClass('navbar-fixed');
+    }
+  });
+});
+	</script>
+</body>
+</html>
